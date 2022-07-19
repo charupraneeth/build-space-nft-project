@@ -67,7 +67,7 @@ contract MyEpicNFT is ERC721URIStorage {
   function makeAnEpicNFT() public {
 
     uint256 newItemId = _tokenIds.current();
-    require(newItemId<3,"Only 3 tokens can be minted");
+    require(newItemId<50,"Only 50 tokens can be minted");
 
     string memory first = pickRandomFirstWord(newItemId);
     string memory second = pickRandomSecondWord(newItemId);
